@@ -1,4 +1,23 @@
+import React, { useState } from 'react';
+
 export default function Table() {
+  let [displayBackToTopButton, setDisplayBackToTopButton] = useState(false);
+  
+  window.onscroll = () => scrollFunction();
+    
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      setDisplayBackToTopButton(true);
+    } else {
+      setDisplayBackToTopButton(false);
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <>
       <header>
@@ -6,7 +25,7 @@ export default function Table() {
         <nav>
           <ul class="nav-links">
             <li>
-              <a href="index">Text</a>
+              <a href="/">Text</a>
             </li>
             <li>
               <a href="images">Images</a>
@@ -26,7 +45,7 @@ export default function Table() {
         </nav>
       </header>
 
-      <button onclick="topFunction()" id="back-to-top-btn">
+      <button onClick={topFunction} id="back-to-top-btn" style={{display: displayBackToTopButton ? 'block' : 'none' }}>
         &#8593;
       </button>
 

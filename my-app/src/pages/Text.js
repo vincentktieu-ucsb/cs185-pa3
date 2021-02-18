@@ -6,7 +6,7 @@ export default function TextPage() {
         <nav>
           <ul class="nav-links">
             <li>
-              <a href="index.html" id="page-selected">
+              <a href="/" id="page-selected">
                 Text
               </a>
             </li>

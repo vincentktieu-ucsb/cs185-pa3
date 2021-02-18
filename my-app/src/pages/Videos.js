@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import Rick1 from "../videos/rick-1.mp4";
 import Rick2 from "../videos/rick-2.mp4";
 import Rick3 from "../videos/rick-3.mp4";
@@ -11,7 +13,7 @@ export default function Videos() {
         <nav>
           <ul class="nav-links">
             <li>
-              <a href="index">Text</a>
+              <a href="/">Text</a>
             </li>
             <li>
               <a href="images">Images</a>

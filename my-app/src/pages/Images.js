@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import Runeterra1 from "../img/runeterra-1.jpg";
 import Runeterra2 from "../img/runeterra-2.jpg";
 import Runeterra3 from "../img/runeterra-3.jpg";
@@ -17,6 +19,23 @@ import Rival3 from "../img/rival-3.jpg";
 import Rival4 from "../img/rival-4.jpg";
 
 export default function Images() {
+  let [displayBackToTopButton, setDisplayBackToTopButton] = useState(false);
+  
+  window.onscroll = () => scrollFunction();
+    
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      setDisplayBackToTopButton(true);
+    } else {
+      setDisplayBackToTopButton(false);
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <>
       <header>
@@ -44,7 +63,7 @@ export default function Images() {
         </nav>
       </header>
 
-      <button onclick="topFunction()" id="back-to-top-btn">
+      <button onClick={topFunction} id="back-to-top-btn"  style={{display: displayBackToTopButton ? 'block' : 'none' }}>
         &#8593;
       </button>
 

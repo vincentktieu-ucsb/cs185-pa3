@@ -14,9 +14,20 @@ export default function Email() {
   }
     
   function validateEmail(email) {
-    // https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+    email = email.trim();
+    if (email.search(" ") >= 0) {
+      return 0;
+    }
+    if (email.length < 6) {
+      return 0;
+    }
+    if (email.search("@") === -1) {
+      return 0;
+    }
+    if (email.slice(email.length-4, email.length) !== ".com" && email.slice(email.length-4, email.length) !== ".edu") {
+      return 0;
+    }
+    return 1;
   }
 
   return (
@@ -26,7 +37,7 @@ export default function Email() {
         <nav>
           <ul class="nav-links">
             <li>
-              <a href="index">Text</a>
+              <a href="/">Text</a>
             </li>
             <li>
               <a href="images">Images</a>
