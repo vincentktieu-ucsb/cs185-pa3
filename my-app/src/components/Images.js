@@ -27,9 +27,8 @@ export default function Images() {
 
   function scrollFunction() {
     if (
-      !(isModalOn) &&
-      (document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20)
+      !isModalOn &&
+      (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
     ) {
       setDisplayBackToTopButton(true);
     } else {
@@ -65,7 +64,7 @@ export default function Images() {
       </button>
 
       {/* https://www.w3schools.com/howto/howto_css_modal_images.asp */}
-      <div 
+      <div
         className="modal"
         style={{ display: isModalOn ? "block" : "none" }}
         onClick={(e) => disableModal(e)}
@@ -88,14 +87,46 @@ export default function Images() {
         </p>
         <br />
         <div className="featured-section">
-          <img src={Runeterra1} className="featured-image" onClick={() => activateModal(Runeterra1)} />
-          <img src={Runeterra2} className="featured-image" onClick={() => activateModal(Runeterra2)} />
-          <img src={Runeterra3} className="featured-image" onClick={() => activateModal(Runeterra3)} />
-          <img src={Hearthstone1} className="featured-image" onClick={() => activateModal(Hearthstone1)} />
-          <img src={Hearthstone2} className="featured-image" onClick={() => activateModal(Hearthstone2)} />
-          <img src={Hearthstone3} className="featured-image" onClick={() => activateModal(Hearthstone3)} />
-          <img src={Chess1} className="featured-image" onClick={() => activateModal(Chess1)} />
-          <img src={Chess2} className="featured-image" onClick={() => activateModal(Chess2)} />
+          <img
+            src={Runeterra1}
+            className="featured-image"
+            onClick={() => activateModal(Runeterra1)}
+          />
+          <img
+            src={Runeterra2}
+            className="featured-image"
+            onClick={() => activateModal(Runeterra2)}
+          />
+          <img
+            src={Runeterra3}
+            className="featured-image"
+            onClick={() => activateModal(Runeterra3)}
+          />
+          <img
+            src={Hearthstone1}
+            className="featured-image"
+            onClick={() => activateModal(Hearthstone1)}
+          />
+          <img
+            src={Hearthstone2}
+            className="featured-image"
+            onClick={() => activateModal(Hearthstone2)}
+          />
+          <img
+            src={Hearthstone3}
+            className="featured-image"
+            onClick={() => activateModal(Hearthstone3)}
+          />
+          <img
+            src={Chess1}
+            className="featured-image"
+            onClick={() => activateModal(Chess1)}
+          />
+          <img
+            src={Chess2}
+            className="featured-image"
+            onClick={() => activateModal(Chess2)}
+          />
         </div>
         <br />
         <p>*Click image to enlarge*</p>
@@ -108,15 +139,51 @@ export default function Images() {
         </p>
         <br />
         <div className="featured-section">
-          <img src={Monopoly1} className="featured-image" onClick={() => activateModal(Monopoly1)} />
-          <img src={Monopoly2} className="featured-image" onClick={() => activateModal(Monopoly2)} />
-          <img src={Unstable1} className="featured-image" onClick={() => activateModal(Unstable1)} />
-          <img src={Unstable3} className="featured-image" onClick={() => activateModal(Unstable3)} />
-          <img src={Unstable2} className="featured-image" onClick={() => activateModal(Unstable2)} />
-          <img src={Rival1} className="featured-image" onClick={() => activateModal(Rival1)} />
-          <img src={Rival2} className="featured-image" onClick={() => activateModal(Rival2)} />
-          <img src={Rival3} className="featured-image" onClick={() => activateModal(Rival3)} />
-          <img src={Rival4} className="featured-image" onClick={() => activateModal(Rival4)} />
+          <img
+            src={Monopoly1}
+            className="featured-image"
+            onClick={() => activateModal(Monopoly1)}
+          />
+          <img
+            src={Monopoly2}
+            className="featured-image"
+            onClick={() => activateModal(Monopoly2)}
+          />
+          <img
+            src={Unstable1}
+            className="featured-image"
+            onClick={() => activateModal(Unstable1)}
+          />
+          <img
+            src={Unstable3}
+            className="featured-image"
+            onClick={() => activateModal(Unstable3)}
+          />
+          <img
+            src={Unstable2}
+            className="featured-image"
+            onClick={() => activateModal(Unstable2)}
+          />
+          <img
+            src={Rival1}
+            className="featured-image"
+            onClick={() => activateModal(Rival1)}
+          />
+          <img
+            src={Rival2}
+            className="featured-image"
+            onClick={() => activateModal(Rival2)}
+          />
+          <img
+            src={Rival3}
+            className="featured-image"
+            onClick={() => activateModal(Rival3)}
+          />
+          <img
+            src={Rival4}
+            className="featured-image"
+            onClick={() => activateModal(Rival4)}
+          />
         </div>
         <br />
         <p>*Click image to enlarge*</p>
