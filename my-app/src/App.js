@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <header>
-        <h3 className="nav-brand">Vincent Tieu's PA2</h3>
+        <h3 className="nav-brand">Vincent Tieu's PA3</h3>
         <nav>
           <ul className="nav-links">
             <li>
