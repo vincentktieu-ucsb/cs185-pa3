@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/cs185-pa3/static/css/main.ce30c686.chunk.css",
+    "main.js": "/cs185-pa3/static/js/main.fa544f56.chunk.js",
+    "main.js.map": "/cs185-pa3/static/js/main.fa544f56.chunk.js.map",
+    "runtime-main.js": "/cs185-pa3/static/js/runtime-main.0edf51f5.js",
+    "runtime-main.js.map": "/cs185-pa3/static/js/runtime-main.0edf51f5.js.map",
+    "static/js/2.01453b32.chunk.js": "/cs185-pa3/static/js/2.01453b32.chunk.js",
+    "static/js/2.01453b32.chunk.js.map": "/cs185-pa3/static/js/2.01453b32.chunk.js.map",
+    "index.html": "/cs185-pa3/index.html",
+    "static/css/main.ce30c686.chunk.css.map": "/cs185-pa3/static/css/main.ce30c686.chunk.css.map",
+    "static/js/2.01453b32.chunk.js.LICENSE.txt": "/cs185-pa3/static/js/2.01453b32.chunk.js.LICENSE.txt",
+    "static/media/chess-1.1023cd23.jpeg": "/cs185-pa3/static/media/chess-1.1023cd23.jpeg",
+    "static/media/chess-2.6919c955.jpeg": "/cs185-pa3/static/media/chess-2.6919c955.jpeg",
+    "static/media/hearthstone-1.f6b337e7.jpeg": "/cs185-pa3/static/media/hearthstone-1.f6b337e7.jpeg",
+    "static/media/hearthstone-2.57990eaf.jpg": "/cs185-pa3/static/media/hearthstone-2.57990eaf.jpg",
+    "static/media/hearthstone-3.7c4e8a70.webp": "/cs185-pa3/static/media/hearthstone-3.7c4e8a70.webp",
+    "static/media/monopoly-1.30e5b295.jpg": "/cs185-pa3/static/media/monopoly-1.30e5b295.jpg",
+    "static/media/monopoly-2.3c2eec0a.jpg": "/cs185-pa3/static/media/monopoly-2.3c2eec0a.jpg",
+    "static/media/rick-1.fae70c86.mp4": "/cs185-pa3/static/media/rick-1.fae70c86.mp4",
+    "static/media/rick-2.52c2573a.mp4": "/cs185-pa3/static/media/rick-2.52c2573a.mp4",
+    "static/media/rick-3.b5c4d552.mp4": "/cs185-pa3/static/media/rick-3.b5c4d552.mp4",
+    "static/media/rick-4.39c51f04.mp4": "/cs185-pa3/static/media/rick-4.39c51f04.mp4",
+    "static/media/rival-1.20b7edbf.png": "/cs185-pa3/static/media/rival-1.20b7edbf.png",
+    "static/media/rival-2.8139c93e.jpg": "/cs185-pa3/static/media/rival-2.8139c93e.jpg",
+    "static/media/rival-3.ee91307c.jpg": "/cs185-pa3/static/media/rival-3.ee91307c.jpg",
+    "static/media/rival-4.080be022.jpg": "/cs185-pa3/static/media/rival-4.080be022.jpg",
+    "static/media/runeterra-1.a9a935d7.jpg": "/cs185-pa3/static/media/runeterra-1.a9a935d7.jpg",
+    "static/media/runeterra-2.d0c376f1.jpg": "/cs185-pa3/static/media/runeterra-2.d0c376f1.jpg",
+    "static/media/runeterra-3.fffd50c5.jpg": "/cs185-pa3/static/media/runeterra-3.fffd50c5.jpg",
+    "static/media/unstable-2.75fe4b0e.jpg": "/cs185-pa3/static/media/unstable-2.75fe4b0e.jpg",
+    "static/media/unstable-3.cfb4ad46.jpg": "/cs185-pa3/static/media/unstable-3.cfb4ad46.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0edf51f5.js",
+    "static/js/2.01453b32.chunk.js",
+    "static/css/main.ce30c686.chunk.css",
+    "static/js/main.fa544f56.chunk.js"
+  ]
+}
