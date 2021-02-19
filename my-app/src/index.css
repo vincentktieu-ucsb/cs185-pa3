@@ -73,13 +73,13 @@ header {
   background-color: rgba(0, 136, 169, 1);
 }
 
-#page-selected {
+.page-selected {
   border: 1px solid white;
   padding: 3px;
   border-radius: 8px;
 }
 
-#page-selected:hover {
+.page-selected:hover {
   border-color: rgba(0, 136, 169, 0.8);
 }
 
