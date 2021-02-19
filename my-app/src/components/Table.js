@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Table() {
   let [displayBackToTopButton, setDisplayBackToTopButton] = useState(false);
-  
+
   window.onscroll = () => scrollFunction();
-    
+
   function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
       setDisplayBackToTopButton(true);
     } else {
       setDisplayBackToTopButton(false);
@@ -20,36 +23,15 @@ export default function Table() {
 
   return (
     <>
-      <header>
-        <h3 class="nav-brand">Vincent Tieu's PA2</h3>
-        <nav>
-          <ul class="nav-links">
-            <li>
-              <a href="/">Text</a>
-            </li>
-            <li>
-              <a href="images">Images</a>
-            </li>
-            <li>
-              <a href="videos">Videos</a>
-            </li>
-            <li>
-              <a href="table" id="page-selected">
-                Table
-              </a>
-            </li>
-            <li>
-              <a href="email">Email</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <button onClick={topFunction} id="back-to-top-btn" style={{display: displayBackToTopButton ? 'block' : 'none' }}>
+      <button
+        onClick={topFunction}
+        id="back-to-top-btn"
+        style={{ display: displayBackToTopButton ? "block" : "none" }}
+      >
         &#8593;
       </button>
 
-      <div class="container">
+      <div className="container">
         <h1>Table.</h1>
         <br />
         <p>Vincent's Ice Cream Tier List</p>
@@ -109,8 +91,8 @@ export default function Table() {
           </tr>
           <tr>
             <td>
-              <a href="https://order.baskinrobbins.com/menu-details/world-class-chocolate/generic?id=7d0ed681-b6fd-4dfe-bace-60364d4bffa8&sizes=%5B%7B%22size%22:%222.5%20oz%20scoop%22,%22id%22:%227d0ed681-b6fd-4dfe-bace-60364d4bffa8%22%7D,%7B%22size%22:%224%20oz%20scoop%22,%22id%22:%2207383559-af04-4ca9-b0f1-3cfa6ac7d8f2%22%7D%5D">
-                World Class Chocolate
+              <a href="https://order.baskinrobbins.com/menu-details/world-className-chocolate/generic?id=7d0ed681-b6fd-4dfe-bace-60364d4bffa8&sizes=%5B%7B%22size%22:%222.5%20oz%20scoop%22,%22id%22:%227d0ed681-b6fd-4dfe-bace-60364d4bffa8%22%7D,%7B%22size%22:%224%20oz%20scoop%22,%22id%22:%2207383559-af04-4ca9-b0f1-3cfa6ac7d8f2%22%7D%5D">
+                World className Chocolate
               </a>
             </td>
             <td>8/10 -- B Tier</td>

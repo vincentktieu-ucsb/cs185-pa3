@@ -1,36 +1,11 @@
 export default function TextPage() {
   return (
     <>
-      <header>
-        <h3 class="nav-brand">Vincent Tieu's PA2</h3>
-        <nav>
-          <ul class="nav-links">
-            <li>
-              <a href="/" id="page-selected">
-                Text
-              </a>
-            </li>
-            <li>
-              <a href="images">Images</a>
-            </li>
-            <li>
-              <a href="videos">Videos</a>
-            </li>
-            <li>
-              <a href="table">Table</a>
-            </li>
-            <li>
-              <a href="email">Email</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <button onclick="topFunction()" id="back-to-top-btn">
         &#8593;
       </button>
 
-      <div class="container">
+      <div className="container">
         <h1>Text.</h1>
         <br />
         <form>
