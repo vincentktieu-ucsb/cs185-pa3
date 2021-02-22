@@ -48,7 +48,9 @@ export default function Images() {
   }
 
   function disableModal(e) {
-    if (e.target !== modalImg) {
+    if (e.target.src && e.target.src.search(modalImg)) {
+      setIsModalOn(true);
+    } else {
       setIsModalOn(false);
     }
   }
@@ -71,7 +73,7 @@ export default function Images() {
       >
         <span className="close">&times;</span>
         <div className="center">
-          <img src={modalImg} className="modal-content" />
+          <img src={modalImg} className="modal-content" alt="" />
         </div>
       </div>
 
@@ -91,41 +93,49 @@ export default function Images() {
             src={Runeterra1}
             className="featured-image"
             onClick={() => activateModal(Runeterra1)}
+            alt=""
           />
           <img
             src={Runeterra2}
             className="featured-image"
             onClick={() => activateModal(Runeterra2)}
+            alt=""
           />
           <img
             src={Runeterra3}
             className="featured-image"
             onClick={() => activateModal(Runeterra3)}
+            alt=""
           />
           <img
             src={Hearthstone1}
             className="featured-image"
             onClick={() => activateModal(Hearthstone1)}
+            alt=""
           />
           <img
             src={Hearthstone2}
             className="featured-image"
             onClick={() => activateModal(Hearthstone2)}
+            alt=""
           />
           <img
             src={Hearthstone3}
             className="featured-image"
             onClick={() => activateModal(Hearthstone3)}
+            alt=""
           />
           <img
             src={Chess1}
             className="featured-image"
             onClick={() => activateModal(Chess1)}
+            alt=""
           />
           <img
             src={Chess2}
             className="featured-image"
             onClick={() => activateModal(Chess2)}
+            alt=""
           />
         </div>
         <br />
@@ -143,46 +153,55 @@ export default function Images() {
             src={Monopoly1}
             className="featured-image"
             onClick={() => activateModal(Monopoly1)}
+            alt=""
           />
           <img
             src={Monopoly2}
             className="featured-image"
             onClick={() => activateModal(Monopoly2)}
+            alt=""
           />
           <img
             src={Unstable1}
             className="featured-image"
             onClick={() => activateModal(Unstable1)}
+            alt=""
           />
           <img
             src={Unstable3}
             className="featured-image"
             onClick={() => activateModal(Unstable3)}
+            alt=""
           />
           <img
             src={Unstable2}
             className="featured-image"
             onClick={() => activateModal(Unstable2)}
+            alt=""
           />
           <img
             src={Rival1}
             className="featured-image"
             onClick={() => activateModal(Rival1)}
+            alt=""
           />
           <img
             src={Rival2}
             className="featured-image"
             onClick={() => activateModal(Rival2)}
+            alt=""
           />
           <img
             src={Rival3}
             className="featured-image"
             onClick={() => activateModal(Rival3)}
+            alt=""
           />
           <img
             src={Rival4}
             className="featured-image"
             onClick={() => activateModal(Rival4)}
+            alt=""
           />
         </div>
         <br />

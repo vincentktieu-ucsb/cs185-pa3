@@ -35,15 +35,11 @@ export default function Email() {
 
   return (
     <>
-      <button onclick="topFunction()" id="back-to-top-btn">
-        &#8593;
-      </button>
-
       <div className="container">
         <h1>Email.</h1>
         <br />
         <form>
-          <label for="email">Email: </label>
+          <label htmlFor="email">Email: </label>
           <br />
           <input
             type="text"

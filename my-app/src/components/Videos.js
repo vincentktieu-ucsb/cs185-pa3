@@ -26,10 +26,12 @@ export default function Videos() {
   }
 
   function disableModal(e) {
-    if (e.target !== modalVideo) {
+    let source = e.target.querySelector(":scope > *");
+    if (source.src && source.src.search(modalVideo)) {
+      setIsModalOn(true);
+    } else {
       setIsModalOn(false);
     }
-    ModalVideoRef.current.pause();
   }
 
   return (

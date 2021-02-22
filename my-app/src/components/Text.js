@@ -1,33 +1,29 @@
 export default function TextPage() {
   return (
     <>
-      <button onclick="topFunction()" id="back-to-top-btn">
-        &#8593;
-      </button>
-
       <div className="container">
         <h1>Text.</h1>
         <br />
         <form>
-          <label for="fname">First Name: </label>
+          <label htmlFor="fname">First Name: </label>
           <br />
           <input type="text" id="fname" name="fname" />
           <br />
-          <label for="fname">Last Name: </label>
+          <label htmlFor="fname">Last Name: </label>
           <br />
           <input type="text" id="fname" name="fname" />
           <br />
           <br />
-          <label for="fmovie">Gender: </label>
+          <label htmlFor="fmovie">Gender: </label>
           <br />
           <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
+          <label htmlFor="male">Male</label>
           <br />
           <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label>
+          <label htmlFor="female">Female</label>
           <br />
           <input type="radio" id="other" name="gender" value="other" />
-          <label for="other">Other</label>
+          <label htmlFor="other">Other</label>
           <br />
           <br />
           <button type="submit" value="Submit">
